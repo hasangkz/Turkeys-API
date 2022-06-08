@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Turkey's API</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        text-align: center;
+      }
+      .pone {
+        margin: 50px 0;
+      }
+      #iller {
+        background-color: rgb(109, 27, 156);
+      }
+      #ilceler {
+        background-color: rgb(255, 0, 170);
+      }
+      #ozel_ilceler {
+        background-color: greenyellow;
+      }
+      #namaz_vakitleri {
+        background-color: rgb(255, 234, 0);
+      }
+      #namaz_vakitleri_il {
+        background-color: brown;
+      }
+      .ptwo h3 {
+        margin: 40px 0px;
+      }
+      h3 {
+        font-size: 30px;
+      }
+      h1 {
+        font-size: 45px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="pone">
+        <h1>
+          Türkiyenin il, ilçelerini ve namaz vakitleri için oluşturulan API
+        </h1>
+      </div>
+      <div class="ptwo">
+        <div class="icerik1">
+          <h3>Tüm illere erişmek için: <span id="iller">'/iller'</span></h3>
+        </div>
+        <div class="icerik2">
+          <h3>
+            Tüm ilçelere erişmek için: <span id="ilceler">'/ilceler'</span>
+          </h3>
+        </div>
+        <div class="icerik3">
+          <h3>
+            Belirli bir ilin tüm ilçelerine erişmek için:
+            <span id="ozel_ilceler">'/ilceler/il_adı'</span>
+          </h3>
+        </div>
+        <div class="icerik4">
+          <h3>
+            ID kullanarak belirli bir ilin tüm namaz vakitlerini görmek için:
+            <span id="namaz_vakitleri">'/namaz/il_idi'</span>
+          </h3>
+        </div>
+        <div class="icerik5">
+          <h3>
+            ID bilmiyorsanız belirli bir ilin tüm namaz vakitlerini görmek için:
+            <span id="namaz_vakitleri_il">'/namaz-vakitleri/il_adı'</span>
+          </h3>
+        </div>
+      </div>
+      <h5>Kaynak: https://www.turktakvim.com/</h5>
+    </div>
+  </body>
+</html>
